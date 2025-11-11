@@ -8,8 +8,20 @@ body{
     background-position: center;
     background-size: cover;
 }
-h1{
-    font-size: 5rem;
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+.banner h1{
+    font-size: 4.7rem;
     font-family: "Climate Crisis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -17,7 +29,10 @@ h1{
     font-variation-settings:
     "YEAR" 1979;
     z-index: 999;
-    
+    background-image: linear-gradient(to left, rgb(242, 242, 242), rgba(0, 0, 0, 0.952), rgba(242, 242, 242, 0.87));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 .refri-container{
     justify-content: center;
@@ -50,3 +65,6 @@ h1{
     80% { transform: translate(2px, -2px); }
     100% { transform: translate(0); }
 }
+
+
+
