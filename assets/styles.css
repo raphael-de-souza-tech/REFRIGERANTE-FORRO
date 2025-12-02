@@ -32,24 +32,43 @@ body{
 
 .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    height: 50px;
+    top: 5%;
+    margin-left: 150px;
 }
-
-
-.navbar a{
-  color: white;
-  
-}
-.navbar nav ul li a{
-  background-color: #CF7312;
-  padding: 10px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.navbar ul{
+.nav-links {
   list-style: none;
+  display: flex;
+  margin: 0 0 0 0;
+  padding: 0;
+  border-radius: 20px;
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "YEAR" 1979;
 }
+.nav-links li a {
+  color: rgb(246, 246, 246);
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  background-color: #CF7312;
+  border-radius: 20px;
+  margin: 200px;
+}
+#a{
+  color: rgb(226, 226, 226);
+  background-color: #CF7312;
+  border-radius: 20px;
+}
+.nav-links #a:hover{
+  background-color: black;
+}
+
