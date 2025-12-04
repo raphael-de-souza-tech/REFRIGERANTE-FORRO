@@ -1,17 +1,13 @@
-// const refriLogo = document.querySelector(".refri-logo");
-// const refriContainer = document.querySelector(".refri-container");
 
-// refriLogo.addEventListener('click', () => {
-//     refriContainer.classList.toggle("active-refri");
-// });
-// const refriLogo = document.querySelector(".refri-logo");
-// const refriLogoDois = document.querySelector(".refri-logo-02");
-// const refriContainer = document.querySelector(".refri-container");
+///////////////////////////
+// conjunto de cerveja 01, efeito vibrar 
+const containerEl = document.querySelector(".banner");
+const patoEl = document.querySelector(".conj");
 
-// refriLogo.addEventListener('click', ()=>{
-//     refriContainer.classList.toggle("vibrando");
-// });
+patoEl.addEventListener("mouseenter", () => {
+    containerEl.classList.add("active-conj");
+});
 
-// refriLogoDois.addEventListener('click', ()=>{
-//     refriContainer.classList.toggle("vibrando");
-// });
+patoEl.addEventListener("mouseleave", () => {
+    containerEl.classList.remove("active-conj");
+});
