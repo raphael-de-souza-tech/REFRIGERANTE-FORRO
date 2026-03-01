@@ -1,11 +1,5 @@
 <div align='center'>
-   <h1>Meu nome é  Raphael de Souza.</h1>
-   <h2>
-     Sou estudante de Análise e Desenvolvimento de Sistemas pela Unicesumar - EAD.
-     Tenho conhecimentos em HTML, CSS e estou estudando bastante JavaScript, recentemente estou buscando fortalecer meu contato direto com essa linguagem que da pra fazer muita coisa, procuro principalmente no futuro estar trabalhando com essa tecnologia que tem uma ampla usabilidade. 
-     Estudo UI/UX na Coursera, curso disponibilizado pelo GOOGLE + CIEE.
-   </h2>
-    <h2>Projeto de Estudo - Refrigerante Forró.</h2>
+    <h1>Projeto de Estudo - Refrigerante Forró.</h1>
     <h2>
         Projeto simples de uma pequena demonstração de criatividade e propaganda pensando numa marca de refrigerante aqui do nordeste.
     </h2>
