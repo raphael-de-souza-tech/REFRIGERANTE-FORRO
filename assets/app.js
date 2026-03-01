@@ -1,10 +1,18 @@
+// botão
+function contato(){
+    window.open("https://www.google.com/search?q=forro+refrigerante");
+}
 
-document.addEventListener("DOMContentLoaded", function() {
-    let botao = document.querySelector(".botao-pesquisa button");
 
-    if (botao) {
-        botao.addEventListener("click", function() {
-            window.open("https://www.google.com/search?q=forro+refrigerante&ie=UTF-8", "_blank");
-        });
-    }
+// animação scroll
+const elements = document.querySelectorAll('.hidden');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
 });
+
+elements.forEach(el => observer.observe(el));

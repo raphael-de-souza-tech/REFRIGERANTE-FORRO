@@ -1,209 +1,256 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
-
-
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
 }
 
 body{
-  background-color: #FFF5EE;
+    background:#0D0D0D;
+    color:#fff;
+    scroll-behavior:smooth;
 }
 
-/* ----- */
-/* 🟢🟢 */
-.logo{
-  display: block;
-  margin-left: 20px;
+/* NAVBAR */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px 40px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(5px);
+    z-index:1000;
 }
+
 .logo img{
-  width: 150px;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    height: 50px;
-    top: 5%;
-    margin-left: 150px;
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0 0 0 0;
-  padding: 0;
-  border-radius: 20px;
-  font-family: "Climate Crisis", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "YEAR" 1979;
-    gap: 200px;
-}
-.nav-links li a {
-  color: rgb(246, 246, 246);
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-  background-color: #000000;
-  border-radius: 50px;
-  margin: 0 100px;
-}
-#b{
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
-  color: #ffffff;
-}
-#b:hover{
-  background-color: #CF7312;
-}
-#a{
-  color: rgb(226, 226, 226);
-  background-color: #CF7312;
-  border-radius: 20px;
-}
-.nav-links #a:hover{
-  background-color: black;
-}
-/* 🔴🔴 */
-
-
-/* 🟢🟢 */
-#bg {
-  width: 100vw;    
-  max-width: 100%;              
-  height: auto;                
-  overflow: hidden;            
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-#bg img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;             
-  /* display: block; */
-}
-/* 🔴🔴 */
-
-
-/* 🟢🟢 */
-#conj{
-  display: flex;
-  position: absolute;
-  top: 47%;                    
-  left: 60%;                   
-  z-index: -1;             
-  cursor: pointer;
-  animation: float 5s infinite;
+    width:100px;
 }
 
-@keyframes float {
-  0%{
-    transform: translate(-50%, -50%) translateY(0px);
-  }
-  50%{
-    transform: translate(-50%, -50%) translateY(-50px);
-  }
-  100%{
-    transform: translate(-50%, -50%) translateY(0px);
-  }
-}
-/* 🔴🔴 */
-
-
-/* 🟢🟢 */
-.banner .forro{
-  font-family: "Climate Crisis", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "YEAR" 1979;
-  color: white;
-  display: flex;
-  position: absolute;
-  z-index: 999;
-}
-.banner .forro h1{ 
-  font-size: 130px;
-  margin-top: 250px;
-}
-strong{
-  margin-left: 500px;
-}
-/* 🔴🔴 */
-
-
-/* 🟢🟢 */
-.cerveja img{
-  width: 1300px;
-  position: absolute;
-  top: 90%;
-  left: -50px;
-  transform: translate(-50%);
-  rotate: 90deg;
-}
-.limao img{
-  width: 1300px;
-  position: absolute;
-  top: 120%;
-  left: 600px;
-  transform: translate(-50%);
-  /* rotate: 90deg; */
-}
-/* 🔴🔴 */
-
-
-/* 🟢🟢 */
-.botao-container {
-    display: flex;
-    /* flex-direction: column; */
-    top: 85%;
-    left: 64%;
-    justify-content: center;
-    align-items: center;
-    /* gap: 2rem;
-    margin: 2rem 0;
-    padding: 1rem; */
-    position: absolute;
-}
-.botao-container .botao-pesquisa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 1rem;
-}
-.botao-container .botao-pesquisa button {
-    font-family: 'Dosis', sans-serif;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: 700;
-    color: whitesmoke;
-    padding: 1rem 1.5rem;
-    border: none;
-    background: linear-gradient(135deg, #CF7312, #000000);
-    border-radius: 2rem;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-main .botao-container .botao-pesquisa button:hover {
-    background: linear-gradient(135deg, #000000, #CF7312);
-    transform: scale(1.2);
-}
-.botao-container img{
-  background-color: #CF7312;
-  border-radius: 10px;
-  width: 25px;
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
 }
 
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    transition:0.3s;
+}
 
+.nav-links a:hover{
+    color:#CF7312;
+}
 
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:url('./IMG/hero-section.jpg') center/cover no-repeat;
+    position:relative;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:160px;
+}
+
+.hero span{
+    color:#CF7312;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:60px;
+}
+
+.btn{
+    padding:12px 30px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#CF7312;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    transform:scale(1.1);
+}
+
+.btn-outline{
+    border:2px solid #CF7312;
+    background:none;
+    color:#CF7312;
+}
+
+.btn-outline:hover{
+    background:#CF7312;
+    color:#fff;
+}
+
+/* SECTIONS */
+section{
+    padding:100px 60px;
+}
+
+/* SOBRE */
+.sobre{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.sobre img{
+    margin-left: 10rem;
+    width: 80%;
+    border-radius:10px;
+}
+.sobre h2{
+    font-size: 80px; 
+}
+.sobre p{
+    font-size: 30px;
+}
+.sobre a{
+    color: #39FF14;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* PRODUTOS */
+.produtos{
+    text-align:center;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:40px;
+}
+
+.card{
+    background:#1A1A1A;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card img{
+    width:100%;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* GALERIA */
+.galeria{
+    text-align:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:40px;
+}
+
+.grid img{
+    width:100%;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.grid img:hover{
+    transform:scale(1.05);
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+}
+
+.cta button{
+    background:linear-gradient(135deg,#CF7312,#000);
+    color:#fff;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cta button:hover{
+    transform:scale(1.1);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    background:#000;
+}
+
+/* ANIMAÇÃO */
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    transition:0.6s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+    .sobre{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+    .cards, .grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+}

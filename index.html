@@ -1,87 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forró Refrigerante</title>
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
-  <!--  -->
-  <!-- icone -->
-  <link rel="shortcut icon" href="./assets/LOGO.png" type="image/x-icon">
-  <!--  -->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/IMG/LOGO.png">
+  <title>REFRIGERANTES FORRÓ</title>
 </head>
 <body>
 
-  <header>
-
+<header>
     <div class="logo">
-      <img src="./assets/LOGO.png" alt="">
+        <img src="./assets/IMG/LOGO.png">
     </div>
 
+    <ul class="nav-links">
+        <li><a href="#sobre">Empresa</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</header>
 
-    <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="#" id="b">Refrigerantes Forró</a></li>
-          <li><a href="#"id="a">Empresa</a></li>
-          <li><a href="#"id="a">Produtos</a></li>
-        </ul>
-      </nav>
-    
-  </header>
-  <main>
-    <!-- banner -->
-    <div class="banner">
-      <div class="forro">
-        <h1>Refrigerantes <br><strong>Forró</strong></h1>
-      </div>
-    <!--  -->
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Refrigerante<span>$ Forró</span></h1>
+        <p>Sabor que bate no peito nordestino!🌵</p>
 
-    <!-- conjunto de cervejas pequenas -->
-      <div id="conj">
-        <img src="./assets/conj-garrafa-01.png" alt="">
-      </div>
-      <img src="./assets/BANNER.png" alt="banner" id="bg">
+        <button class="btn btn-primary">Ver Produtos</button>
+        <button class="btn btn-outline">Sobre</button>
     </div>
+</section>
 
-
-
-
-    <!--  -->
-
-    <!-- cervejas maiores -->
-    <section>
-      <div class="cerveja">
-        <img src="./assets/04.png" alt="cerv">
-      </div>
-      <div class="limao">
-        <img src="./assets/limao.png" alt="lima">
-      </div>
-    </section>
-    <!--  -->
-
-    <!-- link  -->
-    <div class="botao-container">
-      <div class="botao-pesquisa">
-        <button onclick="botao()">
-          Entre em contato com nossos vendedores!
-          <img src="./assets/call.png" alt="">
-        </button>
-      </div> 
+<!-- SOBRE -->
+<section id="sobre" class="sobre ">
+    <!-- <video src="./assets/IMG/video-hero.mp4" autoplay muted loop></video> -->
+    <img src="./assets/IMG/about-section.jpg" alt="">
+    <div>
+        <h2>Sobre a Empresa</h2>
+        <p>O Forró Refrigerante é a energia do nordeste em forma de bebida. Refrescante, autêntico e cheio de identidade, feito pra quem gosta de sabor forte e raiz.</p>
     </div>
-    <!--  -->
-    <!-- video -->
-    <div id="container-video">
-      <video src=""></video>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="produtos hidden">
+    <h2>Produtos</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="./assets/04.png">
+            <h3>Forró Original</h3>
+        </div>
+
+        <div class="card">
+            <img src="./assets/conj-garrafa-01.png">
+            <h3>Pack Especial</h3>
+        </div>
+
+        <div class="card">
+            <img src="./assets/limao.png">
+            <h3>Sabor Limão</h3>
+        </div>
     </div>
+</section>
 
-    
+<!-- GALERIA -->
+<section class="galeria hidden">
+    <h2>Galeria</h2>
 
-  </main>
-  <script src="./assets/app.js"></script>
+    <div class="grid">
+        <img src="./assets/BANNER.png">
+        <img src="./assets/04.png">
+        <img src="./assets/conj-garrafa-01.png">
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="contato" class="cta hidden">
+    <h2>Entre em contato</h2>
+    <button onclick="contato()">Falar com vendedor</button>
+</section>
+
+<footer>
+    <p>© 2026 Forró Refrigerante</p>
+</footer>
 </body>
 </html>
