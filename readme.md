@@ -28,10 +28,6 @@
 </div>
 </div>
 <div align="center">
-<h5> <i> Não importa quão estreito é o portão,<br>
-Não importa o tamanho do castigo.<br>
-Eu sou o dono do meu destino.<br>
-Eu sou o capitão da minha alma.
-.
-<strong>William Ernest Henley</strong> </i> </h5>
+<h5> Livre seu coração da raiva e do medo e não ambicione se não o melhor de si mesmo. <br>
+<strong>Marco Aurelio _ Meditações.</strong></h5>
 <!-- --- -->
